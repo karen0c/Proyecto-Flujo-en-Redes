@@ -1,0 +1,55 @@
+# Cantidad de nodos.
+cantidad_nodos = 14
+
+# Definir los datos del sistema de 14 barras.
+nref = 14          # Nodo de 
+vref = 1.0         # Tensión en la subestación (pu)
+vbase = 23.0       # Tensión base (kV)
+sbase = 100000     # Potencia base (kVA) potencia aparente base
+tol = 1e-8         # Tolerancia del error permitido
+vmin = 0.93        # Tensión mínima (pu)
+vmax = 1.05        # Tensión máxima (pu)
+
+
+# Base de impedancia.
+zbase = 100
+
+# Datos de ramas
+#             de    para       R(%)     X(%)
+ramas = """14      13       7.50    10.00
+              13      12       8.00    11.00
+              13      11       9.00    18.00
+              11      10       4.00     4.00
+              14       9      11.00    11.00
+               9       8       8.00    11.00
+               9       7      11.00    11.00
+               8       6      11.00    11.00
+               8       5       8.00    11.00
+              14       4      11.00    11.00
+               4       3       9.00    12.00
+               4       2       8.00    11.00
+               2       1       4.00     4.00
+              12       6       4.00     4.00
+               7       3       4.00     4.00
+              10       1       9.00    12.00"""
+              
+
+# Demanda de potencia activa y reactiva en las barras
+#           barra       Pd(kW)  Qd(kW) Qbc(kW)
+data_barras = """
+              14          0.0     0.0     0.0
+              13       2000.0  1600.0     0.0
+              12       3000.0  1500.0  1100.0
+              11       2000.0   800.0  1200.0
+              10       1500.0  1200.0     0.0
+               9       4000.0  2700.0     0.0
+               8       5000.0  3000.0  1200.0
+               7       1000.0   900.0     0.0
+               6        600.0   100.0   600.0
+               5       4500.0  2000.0  3700.0
+               4       1000.0   900.0     0.0
+               3       1000.0   700.0  1800.0
+               2       1000.0   900.0     0.0
+               1       2100.0  1000.0  1800.0
+"""
+
