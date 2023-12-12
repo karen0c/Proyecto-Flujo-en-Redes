@@ -11,7 +11,7 @@ vmin = 0.93        # Tensión mínima (pu), paso a kV
 vmax = 1.05        # Tensión máxima (pu), paso a kV
 
 # Base de impedancia.
-zbase = ((vbase**2)/sbase)
+zbase = 1000*((vbase^2)/sbase)
 
 # Datos de ramas
 #              de   para  R(ohm)  X(ohm)
