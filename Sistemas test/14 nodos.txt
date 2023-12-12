@@ -12,7 +12,7 @@ vmax = 1.05*vbase        # Tensión máxima (pu), paso a kV
 
 
 # Base de impedancia.
-zbase = 100*(1000*((vbase**2)/sbase))
+zbase = 100
 
 # Datos de ramas
 #             de    para       R(%)     X(%)
