@@ -1,5 +1,5 @@
 # Cantidad de nodos.
-cantidad_nodos = 33
+cantidad_nodos = 69
 
 # Definir los datos del sistema de 14 barras.
 nref = 1          # Nodo de referencia
