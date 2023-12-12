@@ -7,8 +7,8 @@ vref = 1.0         # Tensión en la subestación (pu)
 vbase = 12.66       # Tensión base (kV)
 sbase = 1000     # Potencia base (kVA) potencia aparente base
 tol = 1e-8         # Tolerancia del error permitido
-vmin = 0.93*vbase        # Tensión mínima (pu), paso a kV
-vmax = 1.05*vbase        # Tensión máxima (pu), paso a kV
+vmin = 0.93        # Tensión mínima (pu), paso a kV
+vmax = 1.05        # Tensión máxima (pu), paso a kV
 
 # Base de impedancia.
 zbase = 1000*((vbase**2)/sbase)
